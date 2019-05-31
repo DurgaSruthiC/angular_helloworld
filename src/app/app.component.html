@@ -1,0 +1,10 @@
+
+<div class="md-form">
+  <!--searchText is a string variable-->
+  <input type="search" [(ngModel)]="searchText" placeholder="Search text">
+</div>
+<ul *ngFor="let data of dataset | filter: searchText">
+  <h2>The following is data</h2>
+  <li>{{data}}</li>
+</ul>
+
